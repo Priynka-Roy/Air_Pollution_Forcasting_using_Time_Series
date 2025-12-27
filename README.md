@@ -1,6 +1,6 @@
 # Air_Pollution_Forcasting_using_Time_Series
 
-![Description or Alt Text](Screenshot 2025-03-06 at 1.10.21.png)
+![output](images/output.png)
 
 This project demonstrates a comprehensive time series analysis and forecasting workflow using the US Pollution dataset from Kaggle. The primary focus is on the NO₂ (Nitrogen Dioxide) pollutant, aggregated to a monthly level. Two forecasting approaches are employed:
 
