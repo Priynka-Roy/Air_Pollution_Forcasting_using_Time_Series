@@ -170,7 +170,7 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-# --------------------------------------------------
-# Project-specific: ignore all data
-# --------------------------------------------------
+# Large datasets (do not commit)
 data/
+*.csv
+
