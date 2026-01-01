@@ -1,14 +1,15 @@
 # Air_Pollution_Forcasting_using_Time_Series
 
-![output](images/output.png)
+![ArimaProphet](reports/ArimaProphet.png)
 
+# Introduction
 This project demonstrates a comprehensive time series analysis and forecasting workflow using the US Pollution dataset from Kaggle. The primary focus is on the NO₂ (Nitrogen Dioxide) pollutant, aggregated to a monthly level. Two forecasting approaches are employed:
 
 ARIMA (Auto-Regressive Integrated Moving Average)
 Prophet (Facebook’s time series forecasting library)
 By following this repository, you’ll learn how to preprocess and explore the data, check for stationarity, decompose the time series, fit forecasting models, and evaluate model performance.
 
-Project Overview
+# Project Overview
 Goal: Forecast monthly NO₂ levels in the United States using historical data from 2000 to 2016.
 Techniques:
 Time series decomposition (trend, seasonality).
@@ -18,7 +19,7 @@ Prophet forecasting.
 Model comparison (MSE, MAE).
 Interactive visualization with Plotly.
 
-Dataset Description
+# Dataset Description
 The US Pollution dataset contains daily pollutant levels (NO₂, SO₂, O₃, CO) across multiple states and counties in the United States from 2000 to 2016. In this project, we focus on NO₂ measurements. We aggregate daily data into monthly averages to simplify and speed up model training.
 
 Key Columns:
@@ -26,7 +27,7 @@ Key Columns:
 Date.Local (converted to datetime)
 NO2.Mean (daily average, aggregated monthly)
 
-Prerequisites and Environment
+# Prerequisites and Environment
 Python 3.7+
 Key libraries:
 pandas
@@ -39,7 +40,7 @@ prophet (for Prophet model)
 plotly (for interactive plots)
 scikit-learn (for error metrics)
 
-Key Steps in the Analysis
+# Key Steps in the Analysis
 Data Loading & Cleaning
 
 Load the CSV file into a pandas DataFrame.
@@ -57,7 +58,7 @@ Stationarity & Decomposition
 
 Apply the Augmented Dickey-Fuller test.
 Decompose the time series into trend, seasonal, and residual components.
-Modeling
+# Modeling
 
 ARIMA:
 Use monthly data with seasonal_order=(0,1,0,12) to capture yearly seasonality.
@@ -84,7 +85,7 @@ Provides a similar forecast pattern for the test period.
 Yearly seasonality is clearly visible in the decomposition plots.
 The comparison plot shows that both models capture the downward trend and seasonal pattern. However, ARIMA and Prophet may diverge slightly in the final months.
 
-Next Steps and Improvements
+# Next Steps and Improvements
 Further Hyperparameter Tuning:
 Experiment with different ARIMA orders and Prophet seasonality parameters to improve forecast accuracy.
 Exogenous Variables:
