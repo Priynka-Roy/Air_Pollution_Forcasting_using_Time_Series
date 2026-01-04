@@ -3,6 +3,7 @@
 ![ArimaProphet](reports/ArimaProphet.png)
 
 # Introduction
+
 This project demonstrates a comprehensive time series analysis and forecasting workflow using the US Pollution dataset from Kaggle. The primary focus is on the NO₂ (Nitrogen Dioxide) pollutant, aggregated to a monthly level. Two forecasting approaches are employed:
 
 ARIMA (Auto-Regressive Integrated Moving Average)
